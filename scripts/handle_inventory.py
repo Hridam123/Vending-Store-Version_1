@@ -25,7 +25,7 @@ class Handling:
         """
         data_of_item= self.storage.loc[item]
 
-        if data_of_item.Pieces_available.iloc[0]>=number_of_items:
+        if data_of_item.Pieces_available.item()>=number_of_items:
             return True
 
         return False
@@ -74,7 +74,7 @@ class Handling:
              This sales method updates everytime a user completes transaction for an item
         """
         current_time= datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        price_of_item= self.storage.loc[item].Price.iloc[0]
+        price_of_item= self.storage.loc[item].Price.item()
         self.receipt_print(item, number_of_items, price_of_item, current_time)
 
         self.total_sales.loc[self.serial_number+1]={#Stores product data based on unique chronological serial number
