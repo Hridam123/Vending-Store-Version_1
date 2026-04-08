@@ -71,8 +71,10 @@ that a single wrong input doesn't crash the programs.
 1) ### Primary Requirement:
    Install Pandas Library
 2) ### Copy the clone file:
-   Copy the clone github file and add the program
-3) ### Start from main.py
+   Copy the clone github file and add the program:
+
+   https://github.com/Hridam123/Vending-Store-Version_1.git
+4) ### Start from main.py
    main.py acts as a user interface which is worth exploring.
 
 
