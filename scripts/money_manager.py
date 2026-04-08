@@ -224,7 +224,7 @@ class MoneyCalculator():
 
         """
         item_data= self.inventory_handler.storage[self.inventory_handler.storage.index==item]
-        item_price= item_data.Price.iloc[0]
+        item_price= item_data.Price.item()
         return item_price*number_of_items
 
     def balance(self,number_of_items:int):
