@@ -58,7 +58,7 @@ def main():
 
         print(handling.storage)
         print("\n")
-        user_choice=input("What would you like to purchase: ").title()
+        user_choice=input("What would you like to purchase: (Type 'Exit' to quit the machine)").title()
 
         if user_choice in list_of_items:#Checks for required items in the inventory
 
