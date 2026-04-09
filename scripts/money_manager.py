@@ -312,7 +312,6 @@ class MoneyCalculator():
 
             if coins>0:
                 print(f"{coins} {key}")
-            print("\n"*2)
 
 
 
